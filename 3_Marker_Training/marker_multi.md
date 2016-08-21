@@ -93,7 +93,7 @@ This tells us that the origin of marker 01 is offset +30 mm in the direction of 
 Let `R[1-0]` be a 4x4 matrix where the first three rows are the values specified in configuration file, and the fourth row is the row vector `{0, 0, 0, 1}`. Then when `R[1-0]` is applied to a point vector in the marker coordinate system `p[1]`, it transforms it into a point vector expressed in the multimarker coordinate system `p[0]`, i.e. `p[0] = R[1-0] • p[1]` (where • is the normal matrix multiplication operator).
 
 ####A Visual Explanation
-In the image below, the red arrows denote the x, y and z axes of the multimarker coordinate system, aligned with marker 0. The blue arrows denote unit vectors `n̂``, `ô` and `â`, aligned with the `x`, `y`, and `z` axes of the marker 1 coordinate system. The green arrow denotes `p`, a vector extending from the origin of the multimarker coordinate system to the origin of of the marker 1 coordinate system. The transform matrix for marker 1 can then be considered 4 column vectors expressing the projection of `n̂``, `ô`, `â` and `p` onto `x`, `y`, and `z`.
+In the image below, the red arrows denote the x, y and z axes of the multimarker coordinate system, aligned with marker 0. The blue arrows denote unit vectors `n̂`, `ô` and `â`, aligned with the `x`, `y`, and `z` axes of the marker 1 coordinate system. The green arrow denotes `p`, a vector extending from the origin of the multimarker coordinate system to the origin of of the marker 1 coordinate system. The transform matrix for marker 1 can then be considered 4 column vectors expressing the projection of `n̂`, `ô`, `â` and `p` onto `x`, `y`, and `z`.
 
 The matrix is thus:
 <pre>
@@ -102,7 +102,7 @@ The matrix is thus:
     n[z] o[z] a[z] p[z]
 </pre>
 
-Compare this to the example above, and it can be seen that for marker 01 on the cube, `n̂`` is aligned with the `x` axis (no change), `ô` points completely in the direction of `-z`, and `â` points completely in the direction of `+y`.
+Compare this to the example above, and it can be seen that for marker 01 on the cube, `n̂` is aligned with the `x` axis (no change), `ô` points completely in the direction of `-z`, and `â` points completely in the direction of `+y`.
 
 ![Cube marker axes][Cube_marker_axes]
 
