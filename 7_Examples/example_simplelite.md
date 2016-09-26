@@ -8,7 +8,7 @@ After executing the application, the device's webcam is activated and scans the 
 Running the simpleLight example application is one of the most straight-forward ways to test that your ARToolKit SDK installation is functioning correctly. It is recommended you do this when you install a new version of ARToolKit SDK.
 
 ##Executing simpleLite
-Before starting the simpleLight application, print out the marker file using a high printer resolution or quality settings and using the A4 or Letter paper size setting. Also set the printer settings to scale the image to fit, scaling up the image to its maximum size on the paper, keeping a square aspect ratio (1:1). The marker file to print: `[ARToolKit root]/doc/patterns/Blank pattern.png`.
+Before starting the simpleLight application, print out the marker file using a high printer resolution or quality settings and using the A4 or Letter paper size setting. Also set the printer settings to scale the image to fit, scaling up the image to its maximum size on the paper, keeping a square aspect ratio (1:1). The marker file to print: [ARTOOLKIT5_HOME/doc/patterns/Hiro pattern.pdf][2].
 
 ### Windows:
 simpleLite can be opened by double-clicking its icon in the `[ARToolKit root]\bin` directory or from the same directory from the command line (cmd.exe) by entering `simpleLite.exe`.
@@ -359,3 +359,4 @@ At this stage, have a play with the simpleLite code. When you are ready, come ba
 [config_video_capture]: 2_Configuration:config_video_capture
 [about_installing]: 1_Getting_Started:about_installing
 [SimpleLite320x240Mac]: :simplelite320x240mac.png
+[2]: https://github.com/artoolkit/artoolkit5/blob/master/doc/patterns/Hiro%20pattern.pdf
