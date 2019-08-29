@@ -9,7 +9,7 @@ The solution to the tracking difficulties caused by large number of markers is t
 
 2D-barcode markers are recognized in constant time meaning that different 2D-barcodes will take about the same amount of computer time to be recognized. Therefore, a large numbers of 2D-barcodes can be used in a scene at little additional computational cost. Additionally, when using 2D-barcode markers, there is a lower probability of one marker being mistaken for another. The downside is of course that the pattern inside the printed markers is no longer pictorial.
 
-##Changing the Barcode Dimensions
+## Changing the Barcode Dimensions
 The total number of possible barcodes available depends on the number of rows and columns in the barcode and the type of error detection and correction (EDC) algorithm enabled. Using better EDC will result in a smaller set of barcodes being available, but lower likelihood of markers being misrecognized during tracking.
 
 The barcode type is set via the function [arSetMatrixCodeType][arSetMatrixCodeType]
@@ -31,7 +31,7 @@ For example, the first row tells us that a 2D-barcode marker with a 3x3 matrix o
 
 In general, it is better to use the barcode type with the greatest possible Hamming distance, as this results in the lowest likelihood of one marker being misrecognized as a different marker.
 
-##2D-Barcode Markers as Multi-Markers
+## 2D-Barcode Markers as Multi-Markers
 Multi-markers, not to be confused with the concept of multiple markers discussed above, are marker types that are made up of many sub-markers that are recognized and tracked as a single marker entity. This is opposed to recognizing and tracking multiple markers separately in a camera view. Patterns made up of a grid (matrix) of 2D-barcode markers are the default configuration for multi-marker sets, since they offer such radical performance improvements over other marker types with the use of multi-markers. Another advantage of multi-markers over traditional markers is that a multi-marker can still be recognized and tracked when some sub-markers are occluded from camera view.
 
 The default barcode dimension for 2D-barcode markers in ARToolKit is a 3x3 pattern. For 3x3 2D-barcodes, there are 64 rotationally unique pattern arrangements making the marker suitable for augmented reality - enough patterns for most tabletop AR applications. You will find “.png” graphic files representing the 64 2D-barcode patterns in the ARToolKit SDK download; see folder path “[downloaded ARToolKit SDK]/doc/patterns/Matrix code 3x3 (72dpi)/”. These files can be printed.
